@@ -1,5 +1,5 @@
 {
-  "name": "tailadmin-react",
+  "name": "cheick-portfolio",
   "private": true,
   "version": "2.0.2",
   "type": "module",
@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@fullcalendar/core": "^6.1.15",
     "@fullcalendar/daygrid": "^6.1.15",
     "@fullcalendar/interaction": "^6.1.15",
@@ -21,7 +22,9 @@
     "apexcharts": "^4.1.0",
     "clsx": "^2.1.1",
     "flatpickr": "^4.6.13",
+    "framer-motion": "^12.23.24",
     "lucide-react": "^0.544.0",
+    "pdfjs-dist": "^5.4.394",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
     "react-dnd": "^16.0.1",
@@ -30,6 +33,7 @@
     "react-dropzone": "^14.3.5",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
+    "react-pdf": "^10.2.0",
     "react-router": "^7.1.5",
     "react-router-dom": "^7.9.3",
     "swiper": "^11.2.3",
