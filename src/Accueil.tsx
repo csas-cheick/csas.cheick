@@ -7,7 +7,7 @@ import illustrationPerso from "./assets/illustration_perso.svg";
 const Accueil: FC = () => {
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Section Hero */}
       <div className="min-h-screen flex items-center justify-center py-12 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -102,12 +102,12 @@ const Accueil: FC = () => {
       </div>
 
       {/* Section Réseaux Sociaux */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20 px-4">
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             RETROUVEZ-MOI SUR
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-12">
+          <p className="text-lg text-gray-600 mb-12">
             N'hésitez pas à me contacter
           </p>
           

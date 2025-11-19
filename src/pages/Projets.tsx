@@ -40,7 +40,7 @@ const PROJECTS_DATA: Project[] = [
     title: "FadakCare",
     description: "Plateforme intelligente de dépistage cardiovasculaire.",
     longDescription:
-      "FadakCare est une plateforme médicale complète intégrant un dépistage intelligent basé sur des modèles d'IA, une gestion des patients, un système de rendez-vous, une téléconsultation WebRTC, ainsi que des tableaux de bord avancés pour médecins et administrateurs. Le projet combine backend .NET, frontend React, WebRTC, notifications et analyses prédictives.",
+      "FadakCare est une plateforme médicale complète intégrant un dépistage intelligent basé sur des modèles d'IA, une gestion des patients, un système de rendez-vous, une téléconsultation WebRTC, ainsi que des tableaux de bord avancés pour médecins et administrateurs.",
     image: "/images/screenshots/fadakcare.png",
     technologies: [
       { name: ".NET", icon: <SiDotnet /> },
