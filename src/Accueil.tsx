@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import illustrationHome from "./assets/illustration_home.svg";
 import illustrationPerso from "./assets/illustration_perso.svg";
-import { useLanguage } from "./context/LanguageContext";
 
 const Accueil: FC = () => {
-  const { t } = useLanguage();
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
@@ -107,10 +105,10 @@ const Accueil: FC = () => {
       <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
-            {t.home.socialTitle}
+            RETROUVEZ-MOI SUR
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-12">
-            {t.home.socialSubtitle}
+            N'hésitez pas à me contacter
           </p>
           
           <div className="flex justify-center gap-6 flex-wrap">
