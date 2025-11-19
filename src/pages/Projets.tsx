@@ -49,8 +49,8 @@ const PROJECTS_DATA: Project[] = [
       { name: "MySQL", icon: <SiMysql /> },
       { name: "WebRTC", icon: <SiWebrtc /> },
     ],
-    githubUrl: "https://github.com/csas-cheick/fadakcare",
-    liveUrl: "#",
+    githubUrl: "https://github.com/csas-cheick/fadakcare-frontend",
+    liveUrl: "https://fadakcare-frontend.onrender.com/",
     category: "Full Stack & IA",
   },
   {
@@ -64,6 +64,7 @@ const PROJECTS_DATA: Project[] = [
       { name: "React", icon: <FaReact /> },
     ],
     githubUrl: "https://github.com/csas-cheick/capital-analysis",
+    liveUrl: "https://capital-analysis.onrender.com",
     category: "Web Development",
   },
   {
@@ -95,6 +96,7 @@ const PROJECTS_DATA: Project[] = [
       { name: "MySQL", icon: <SiMysql /> },
     ],
     githubUrl: "https://github.com/csas-cheick/collections",
+    liveUrl: "https://collections-f6e2.onrender.com",
     category: "Web Development",
   },
   {
