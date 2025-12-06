@@ -122,27 +122,27 @@ const Certifications: FC = () => {
   const certifications = getCertificationsData();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       {/* Section Hero */}
       <div className="flex items-center justify-center px-4 py-6 md:py-10 relative">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
             {/* Section gauche - Texte */}
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 mb-2 md:mb-3">
-                {t.certifications.title} <span className="text-indigo-600">{t.certifications.titleHighlight}</span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 dark:text-white mb-2 md:mb-3">
+                {t.certifications.title} <span className="text-indigo-600 dark:text-indigo-400">{t.certifications.titleHighlight}</span>
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-2 md:mb-3">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 mb-2 md:mb-3">
                 {t.certifications.subtitle}
               </p>
-              <p className="text-sm md:text-base lg:text-lg text-gray-600 mb-3 md:mb-4">
+              <p className="text-sm md:text-base lg:text-lg text-gray-600 dark:text-gray-400 mb-3 md:mb-4">
                 {t.certifications.subtitle}
               </p>
               
               {/* Scroll indicator */}
               <button
                 onClick={scrollToCertifications}
-                className="animate-bounce mt-2 text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer"
+                className="animate-bounce mt-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors cursor-pointer"
                 aria-label={language === 'fr' ? "Défiler vers les certifications" : "Scroll to certifications"}
               >
                 <FaChevronDown className="text-2xl md:text-3xl" />
@@ -164,12 +164,12 @@ const Certifications: FC = () => {
       </div>
 
       {/* Section Certifications */}
-      <div id="certifications-section" className="bg-gray-50 py-8 md:py-12 px-4">
+      <div id="certifications-section" className="bg-gray-50 dark:bg-gray-900 py-8 md:py-12 px-4 transition-colors duration-300">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 md:mb-3 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-white mb-2 md:mb-3 text-center">
             {t.certifications.sectionTitle}
           </h2>
-          <p className="text-center text-sm md:text-base text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-sm md:text-base text-gray-600 dark:text-gray-400 mb-6 md:mb-8 max-w-2xl mx-auto">
             Chaque certification représente un engagement envers l'excellence et l'apprentissage continu
           </p>
 
@@ -187,7 +187,7 @@ const Certifications: FC = () => {
                 >
                   {/* Face avant */}
                   <div
-                    className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-2 border-gray-100 hover:border-indigo-200"
+                    className="absolute w-full h-full backface-hidden bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-2 border-gray-100 dark:border-gray-700 hover:border-indigo-200 dark:hover:border-indigo-500"
                   >
                     {/* Colored top bar */}
                     <div className={`h-1.5 md:h-2 ${cert.color}`}></div>
@@ -202,20 +202,20 @@ const Certifications: FC = () => {
                         {/* Content */}
                         <div className="flex-1">
                           <div className="flex items-center justify-between mb-1 md:mb-2">
-                            <span className="inline-block px-2 md:px-3 py-0.5 md:py-1 text-[10px] md:text-xs font-semibold text-indigo-600 bg-indigo-50 rounded-full">
+                            <span className="inline-block px-2 md:px-3 py-0.5 md:py-1 text-[10px] md:text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30 rounded-full">
                               {cert.date}
                             </span>
                           </div>
                           
-                          <h3 className="text-base md:text-xl lg:text-2xl font-bold text-gray-800 mb-1 md:mb-2 group-hover:text-indigo-600 transition-colors leading-tight">
+                          <h3 className="text-base md:text-xl lg:text-2xl font-bold text-gray-800 dark:text-white mb-1 md:mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors leading-tight">
                             {cert.title}
                           </h3>
                           
-                          <p className="text-gray-700 font-medium mb-1 md:mb-2 text-xs md:text-sm lg:text-base leading-tight">
+                          <p className="text-gray-700 dark:text-gray-300 font-medium mb-1 md:mb-2 text-xs md:text-sm lg:text-base leading-tight">
                             {cert.subtitle}
                           </p>
                           
-                          <p className="text-gray-500 text-[10px] md:text-xs lg:text-sm mb-2 md:mb-3 flex items-center gap-1 md:gap-2">
+                          <p className="text-gray-500 dark:text-gray-400 text-[10px] md:text-xs lg:text-sm mb-2 md:mb-3 flex items-center gap-1 md:gap-2">
                             <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-indigo-400 rounded-full"></span>
                             {cert.organization}
                           </p>
@@ -227,7 +227,7 @@ const Certifications: FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-shimmer pointer-events-none"></div>
 
                     {/* Texte en bas avec animation - toujours visible sur mobile/tablette, au survol sur desktop */}
-                    <div className="absolute bottom-2 md:bottom-3 lg:bottom-4 left-0 right-0 flex items-center justify-center gap-1.5 md:gap-2 text-indigo-600 text-[10px] md:text-xs lg:text-sm font-medium opacity-100 xl:opacity-0 xl:group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-2 md:bottom-3 lg:bottom-4 left-0 right-0 flex items-center justify-center gap-1.5 md:gap-2 text-indigo-600 dark:text-indigo-400 text-[10px] md:text-xs lg:text-sm font-medium opacity-100 xl:opacity-0 xl:group-hover:opacity-100 transition-opacity duration-300">
                       <div className="relative">
                         <FaSyncAlt className="text-xs md:text-sm lg:text-base animate-spin-slow" />
                         <div className="absolute inset-0 rounded-full bg-indigo-400 animate-ping opacity-75"></div>
@@ -240,7 +240,7 @@ const Certifications: FC = () => {
 
                   {/* Face arrière */}
                   <div
-                    className="absolute w-full h-full backface-hidden bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-xl shadow-lg p-3 md:p-4 lg:p-6 flex flex-col justify-between rotate-y-180"
+                    className="absolute w-full h-full backface-hidden bg-gradient-to-br from-indigo-600 to-indigo-800 dark:from-indigo-800 dark:to-indigo-900 rounded-xl shadow-lg p-3 md:p-4 lg:p-6 flex flex-col justify-between rotate-y-180"
                   >
                     <div>
                       <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3 lg:mb-4">
@@ -266,7 +266,7 @@ const Certifications: FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="block w-full text-center px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm lg:text-base bg-white text-indigo-600 font-medium rounded-lg hover:bg-gray-100 transition-colors shadow-md"
+                        className="block w-full text-center px-3 md:px-4 py-2 md:py-3 text-xs md:text-sm lg:text-base bg-white dark:bg-gray-200 text-indigo-600 dark:text-indigo-800 font-medium rounded-lg hover:bg-gray-100 transition-colors shadow-md"
                       >
                         <span className="flex items-center justify-center gap-1.5 md:gap-2">
                           {language === 'fr' ? "Vérifier la certification" : "Verify certification"}
@@ -290,3 +290,4 @@ const Certifications: FC = () => {
 };
 
 export default Certifications;
+

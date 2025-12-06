@@ -9,32 +9,32 @@ const Accueil: FC = () => {
   const { t } = useLanguage();
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       {/* Section Hero */}
       <div className="min-h-screen flex items-center justify-center py-12 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Section gauche - Texte */}
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-6">
                 {t.home.greeting} <span className="inline-block animate-wave">👋🏻</span>
               </h1>
-              <p className="text-2xl md:text-3xl text-gray-700 mb-4">
-                {t.home.intro} <span className="text-indigo-600 font-bold">{t.home.name}</span>
+              <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-4">
+                {t.home.intro} <span className="text-indigo-600 dark:text-indigo-400 font-bold">{t.home.name}</span>
               </p>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
                 {t.home.description}
               </p>
               <div className="flex gap-4">
                 <Link
                   to="/projets"
-                  className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors"
+                  className="bg-indigo-600 dark:bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 dark:hover:bg-indigo-600 transition-colors"
                 >
                   {t.home.viewProjects}
                 </Link>
                 <Link
                   to="/resume"
-                  className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors border-2 border-indigo-600"
+                  className="bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors border-2 border-indigo-600 dark:border-indigo-400"
                 >
                   {t.home.myResume}
                 </Link>
@@ -56,16 +56,16 @@ const Accueil: FC = () => {
       </div>
 
       {/* Section À propos */}
-      <div className="bg-white py-10 md:py-16 px-4">
+      <div className="bg-white dark:bg-gray-900 py-10 md:py-16 px-4 transition-colors duration-300">
         <div className="container mx-auto max-w-6xl">
           <div className="flex gap-6 md:gap-10 items-center">
             {/* Section gauche - Texte */}
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 mb-8">
-                {t.home.aboutTitle} <span className="text-indigo-600">{t.home.aboutTitleHighlight}</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 dark:text-white mb-8">
+                {t.home.aboutTitle} <span className="text-indigo-600 dark:text-indigo-400">{t.home.aboutTitleHighlight}</span>
               </h2>
               
-              <div className="space-y-5 text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
+              <div className="space-y-5 text-gray-700 dark:text-gray-300 text-base md:text-lg lg:text-xl leading-relaxed">
                 <p>{t.home.aboutText1}</p>
                 <p>{t.home.aboutText2}</p>
               </div>
@@ -86,12 +86,12 @@ const Accueil: FC = () => {
       </div>
 
       {/* Section Réseaux Sociaux */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4">
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20 px-4 transition-colors duration-300">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             {t.home.socialTitle}
           </h2>
-          <p className="text-lg text-gray-600 mb-12">
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-12">
             {t.home.socialSubtitle}
           </p>
           

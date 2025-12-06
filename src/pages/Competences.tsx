@@ -164,27 +164,27 @@ const Competences: FC = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen transition-colors duration-300">
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center px-4 py-6 md:py-10 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <section className="relative flex items-center justify-center px-4 py-6 md:py-10 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
             {/* Texte à gauche */}
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 mb-2 md:mb-3">
-                {t.skills.title} <span className="text-indigo-600">{t.skills.titleHighlight}</span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 dark:text-white mb-2 md:mb-3">
+                {t.skills.title} <span className="text-indigo-600 dark:text-indigo-400">{t.skills.titleHighlight}</span>
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-2 md:mb-3">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 mb-2 md:mb-3">
                 {t.skills.subtitle}
               </p>
-              <p className="text-sm md:text-base lg:text-lg text-gray-600 mb-3 md:mb-4">
+              <p className="text-sm md:text-base lg:text-lg text-gray-600 dark:text-gray-400 mb-3 md:mb-4">
                 {t.skills.description}
               </p>
               
               {/* Scroll indicator */}
               <button
                 onClick={scrollToSkills}
-                className="animate-bounce mt-2 text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer"
+                className="animate-bounce mt-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors cursor-pointer"
                 aria-label={language === 'fr' ? "Défiler vers les compétences" : "Scroll to skills"}
               >
                 <FaChevronDown className="text-2xl md:text-3xl" />
@@ -204,12 +204,12 @@ const Competences: FC = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills-section" className="py-12 md:py-16 px-4 bg-gray-50">
+      <section id="skills-section" className="py-12 md:py-16 px-4 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-3 md:mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-3 md:mb-4">
             {t.skills.sectionTitle}
           </h2>
-          <p className="text-center text-sm md:text-base text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
+          <p className="text-center text-sm md:text-base text-gray-600 dark:text-gray-400 mb-8 md:mb-12 max-w-2xl mx-auto px-4">
             {t.skills.description}
           </p>
 
@@ -217,22 +217,22 @@ const Competences: FC = () => {
             {skillCategories.map((category, categoryIndex) => (
               <div 
                 key={categoryIndex}
-                className="bg-white rounded-xl shadow-lg p-4 md:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
               >
                 {/* Header */}
-                <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4 pb-3 md:pb-4 border-b-2 border-indigo-100">
-                  <div className="bg-indigo-50 p-2 md:p-3 rounded-lg flex-shrink-0">
+                <div className="flex items-center gap-2 md:gap-3 mb-3 md:mb-4 pb-3 md:pb-4 border-b-2 border-indigo-100 dark:border-gray-700">
+                  <div className="bg-indigo-50 dark:bg-indigo-900/30 p-2 md:p-3 rounded-lg flex-shrink-0">
                     <div className="text-2xl md:text-3xl">
                       {category.icon}
                     </div>
                   </div>
-                  <h3 className="text-base md:text-xl font-bold text-gray-800 leading-tight">
+                  <h3 className="text-base md:text-xl font-bold text-gray-800 dark:text-white leading-tight">
                     {category.title}
                   </h3>
                 </div>
                 
                 {/* Description */}
-                <p className="text-xs md:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed">
+                <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mb-3 md:mb-4 leading-relaxed">
                   {category.description}
                 </p>
 
@@ -241,12 +241,12 @@ const Competences: FC = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div 
                       key={skillIndex} 
-                      className="flex items-center gap-1.5 md:gap-2 p-1.5 md:p-2 bg-gray-50 rounded-lg hover:bg-indigo-50 transition-colors group"
+                      className="flex items-center gap-1.5 md:gap-2 p-1.5 md:p-2 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-indigo-50 dark:hover:bg-gray-600 transition-colors group"
                     >
                       <div className="text-lg md:text-2xl group-hover:scale-110 transition-transform flex-shrink-0">
                         {skill.icon}
                       </div>
-                      <span className="text-[10px] md:text-xs font-medium text-gray-700 group-hover:text-indigo-600 leading-tight">
+                      <span className="text-[10px] md:text-xs font-medium text-gray-700 dark:text-gray-300 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 leading-tight">
                         {skill.name}
                       </span>
                     </div>
@@ -257,12 +257,12 @@ const Competences: FC = () => {
           </div>
 
           {/* Note en cours d'approfondissement */}
-          <div className="mt-8 md:mt-12 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-4 md:p-6 border-l-4 border-indigo-600">
+          <div className="mt-8 md:mt-12 bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-4 md:p-6 border-l-4 border-indigo-600 dark:border-indigo-400">
             <div className="flex items-start gap-2 md:gap-3">
               <span className="text-2xl md:text-3xl flex-shrink-0">📚</span>
               <div>
-                <h3 className="font-bold text-gray-800 mb-1 md:mb-2 text-sm md:text-base">En cours d'approfondissement</h3>
-                <p className="text-xs md:text-base text-gray-700 leading-relaxed">
+                <h3 className="font-bold text-gray-800 dark:text-white mb-1 md:mb-2 text-sm md:text-base">En cours d'approfondissement</h3>
+                <p className="text-xs md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                   Je continue à développer mes compétences en <strong>Intelligence Artificielle</strong>, 
                   <strong> Cloud Computing</strong> et <strong> Architecture logicielle avancée</strong> à travers 
                   des projets personnels et des formations continues.

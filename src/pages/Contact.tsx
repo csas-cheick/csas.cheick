@@ -67,20 +67,20 @@ const Contact: FC = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen transition-colors duration-300">
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center px-4 py-4 md:py-6 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <section className="relative flex items-center justify-center px-4 py-4 md:py-6 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-3 md:gap-6 items-center">
             {/* Texte à gauche */}
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 mb-2 md:mb-3">
-                {t.contact.title} <span className="text-indigo-600">{t.contact.titleHighlight}</span>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 dark:text-white mb-2 md:mb-3">
+                {t.contact.title} <span className="text-indigo-600 dark:text-indigo-400">{t.contact.titleHighlight}</span>
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-2 md:mb-3">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 mb-2 md:mb-3">
                 {t.contact.subtitle}
               </p>
-              <p className="text-sm md:text-base lg:text-lg text-gray-600 mb-3 md:mb-4">
+              <p className="text-sm md:text-base lg:text-lg text-gray-600 dark:text-gray-400 mb-3 md:mb-4">
                 {language === 'fr' 
                   ? "Je suis toujours ouvert aux nouvelles collaborations, projets freelance et opportunités professionnelles."
                   : "I am always open to new collaborations, freelance projects and professional opportunities."}
@@ -88,36 +88,36 @@ const Contact: FC = () => {
 
               {/* Contact Info Cards */}
               <div className="space-y-2 md:space-y-3 mb-3 md:mb-4">
-                <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                  <div className="bg-indigo-100 p-1.5 md:p-2 rounded-full">
-                    <FaEnvelope className="text-indigo-600 text-sm md:text-base" />
+                <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                  <div className="bg-indigo-100 dark:bg-indigo-900/30 p-1.5 md:p-2 rounded-full">
+                    <FaEnvelope className="text-indigo-600 dark:text-indigo-400 text-sm md:text-base" />
                   </div>
                   <div>
-                    <p className="text-[10px] md:text-xs text-gray-500">Email</p>
-                    <a href="mailto:csas.cheick@gmail.com" className="text-xs md:text-sm text-gray-800 font-medium hover:text-indigo-600">
+                    <p className="text-[10px] md:text-xs text-gray-500 dark:text-gray-400">Email</p>
+                    <a href="mailto:csas.cheick@gmail.com" className="text-xs md:text-sm text-gray-800 dark:text-white font-medium hover:text-indigo-600 dark:hover:text-indigo-400">
                       csas.cheick@gmail.com
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                  <div className="bg-indigo-100 p-1.5 md:p-2 rounded-full">
-                    <FaPhone className="text-indigo-600 text-sm md:text-base" />
+                <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                  <div className="bg-indigo-100 dark:bg-indigo-900/30 p-1.5 md:p-2 rounded-full">
+                    <FaPhone className="text-indigo-600 dark:text-indigo-400 text-sm md:text-base" />
                   </div>
                   <div>
-                    <p className="text-[10px] md:text-xs text-gray-500">{language === 'fr' ? "Téléphone" : "Phone"}</p>
-                    <a href="tel:+21653414178" className="text-xs md:text-sm text-gray-800 font-medium hover:text-indigo-600">
+                    <p className="text-[10px] md:text-xs text-gray-500 dark:text-gray-400">{language === 'fr' ? "Téléphone" : "Phone"}</p>
+                    <a href="tel:+21653414178" className="text-xs md:text-sm text-gray-800 dark:text-white font-medium hover:text-indigo-600 dark:hover:text-indigo-400">
                       +216 53 414 178
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                  <div className="bg-indigo-100 p-1.5 md:p-2 rounded-full">
-                    <FaMapMarkerAlt className="text-indigo-600 text-sm md:text-base" />
+                <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                  <div className="bg-indigo-100 dark:bg-indigo-900/30 p-1.5 md:p-2 rounded-full">
+                    <FaMapMarkerAlt className="text-indigo-600 dark:text-indigo-400 text-sm md:text-base" />
                   </div>
                   <div>
-                    <p className="text-[10px] md:text-xs text-gray-500">{language === 'fr' ? "Localisation" : "Location"}</p>
-                    <p className="text-xs md:text-sm text-gray-800 font-medium">
+                    <p className="text-[10px] md:text-xs text-gray-500 dark:text-gray-400">{language === 'fr' ? "Localisation" : "Location"}</p>
+                    <p className="text-xs md:text-sm text-gray-800 dark:text-white font-medium">
                       {language === 'fr' ? "Monastir, Tunisie" : "Monastir, Tunisia"}
                     </p>
                   </div>
@@ -127,7 +127,7 @@ const Contact: FC = () => {
               {/* Scroll indicator */}
               <button
                 onClick={scrollToForm}
-                className="animate-bounce mt-1 text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer"
+                className="animate-bounce mt-1 text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors cursor-pointer"
                 aria-label={language === 'fr' ? "Défiler vers le formulaire" : "Scroll to form"}
               >
                 <FaChevronDown className="text-xl md:text-2xl" />
@@ -147,20 +147,20 @@ const Contact: FC = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact-form-section" className="py-16 px-4 bg-gray-50">
+      <section id="contact-form-section" className="py-16 px-4 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-4">
             {t.contact.formTitle}
           </h2>
-          <p className="text-center text-gray-600 mb-12">
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
             {language === 'fr' 
               ? "Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais."
               : "Fill out the form below and I will get back to you as soon as possible."}
           </p>
 
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 transition-colors duration-300">
             {submitStatus === "success" && (
-              <div className="mb-6 p-4 bg-green-100 text-green-800 rounded-lg flex items-center gap-3">
+              <div className="mb-6 p-4 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-lg flex items-center gap-3">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -168,7 +168,7 @@ const Contact: FC = () => {
               </div>
             )}
             {submitStatus === "error" && (
-              <div className="mb-6 p-4 bg-red-100 text-red-800 rounded-lg flex items-center gap-3">
+              <div className="mb-6 p-4 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 rounded-lg flex items-center gap-3">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                 </svg>
@@ -180,7 +180,7 @@ const Contact: FC = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Name */}
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                     {t.contact.name} *
                   </label>
                   <input
@@ -190,14 +190,14 @@ const Contact: FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-indigo-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:border-indigo-600 dark:focus:border-indigo-400 focus:outline-none transition-colors"
                     placeholder={language === 'fr' ? "Votre nom" : "Your name"}
                   />
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                     Email *
                   </label>
                   <input
@@ -207,7 +207,7 @@ const Contact: FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-indigo-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:border-indigo-600 dark:focus:border-indigo-400 focus:outline-none transition-colors"
                     placeholder={language === 'fr' ? "votre.email@exemple.com" : "your.email@example.com"}
                   />
                 </div>
@@ -215,7 +215,7 @@ const Contact: FC = () => {
 
               {/* Subject */}
               <div>
-                <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                   {language === 'fr' ? "Sujet" : "Subject"} *
                 </label>
                 <input
@@ -225,14 +225,14 @@ const Contact: FC = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-indigo-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:border-indigo-600 dark:focus:border-indigo-400 focus:outline-none transition-colors"
                   placeholder={language === 'fr' ? "Objet de votre message" : "Subject of your message"}
                 />
               </div>
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                   {t.contact.message} *
                 </label>
                 <textarea
@@ -242,7 +242,7 @@ const Contact: FC = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-indigo-600 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:border-indigo-600 dark:focus:border-indigo-400 focus:outline-none transition-colors resize-none"
                   placeholder={language === 'fr' ? "Décrivez votre projet ou votre demande..." : "Describe your project or request..."}
                 />
               </div>
@@ -251,7 +251,7 @@ const Contact: FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-indigo-600 dark:bg-indigo-500 text-white font-medium rounded-lg hover:bg-indigo-700 dark:hover:bg-indigo-600 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 {isSubmitting ? (
                   <>
@@ -273,7 +273,7 @@ const Contact: FC = () => {
 
           {/* Social Links */}
           <div className="mt-12 text-center">
-            <h3 className="text-xl font-semibold text-gray-800 mb-6">
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
               {t.contact.socialConnect}
             </h3>
             <div className="flex justify-center gap-4">
@@ -282,7 +282,7 @@ const Contact: FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-blue-600"
+                className="p-4 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-blue-600"
               >
                 <FaLinkedin className="text-2xl" />
               </a>
@@ -291,7 +291,7 @@ const Contact: FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-800"
+                className="p-4 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-800 dark:text-white"
               >
                 <FaGithub className="text-2xl" />
               </a>
@@ -300,7 +300,7 @@ const Contact: FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
-                className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-blue-400"
+                className="p-4 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-blue-400"
               >
                 <FaTwitter className="text-2xl" />
               </a>
