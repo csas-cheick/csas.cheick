@@ -37,6 +37,9 @@ const SEO: FC<SEOProps> = ({
 
   return (
     <Helmet>
+      {/* Google Site Verification */}
+      <meta name="google-site-verification" content="_o-OrJ30ZOTNuO300M9oIunLqdqxRYRNH48fsTjzImQ" />
+      
       {/* Primary Meta Tags */}
       <html lang={language} />
       <title>{seoTitle}</title>
