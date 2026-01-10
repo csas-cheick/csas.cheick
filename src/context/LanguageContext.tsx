@@ -12,6 +12,7 @@ const translations = {
   fr: {
     nav: {
       home: "Accueil",
+      about: "À Propos",
       skills: "Compétences",
       projects: "Projets",
       certifications: "Certifications",
@@ -117,12 +118,89 @@ const translations = {
     },
     footer: {
       designed: "Conçu et développé par",
-      rights: "Tous droits réservés"
+      rights: "Tous droits réservés",
+      description: "Développeur Full Stack passionné par la création de solutions innovantes et performantes.",
+      quickLinks: "Liens rapides",
+      followMe: "Me suivre",
+      home: "Accueil",
+      about: "À propos",
+      projects: "Projets",
+      skills: "Compétences",
+      contact: "Contact"
+    },
+    about: {
+      badge: "À propos de moi",
+      heroTitle: "Passionné par la",
+      heroTitleHighlight: "technologie",
+      heroSubtitle: "Développeur Full Stack passionné par l'innovation et les nouvelles technologies.",
+      heroDescription: "Découvrez mon parcours, mes valeurs et ce qui me motive au quotidien.",
+      scrollLabel: "Défiler vers le contenu",
+      whoAmI: "Qui suis-je ?",
+      introText1: "Je suis Cheick Salihou Ahmed Cheick Chaibou, étudiant en Licence 3 Sciences Informatiques. Mon parcours m'a permis de développer une expertise solide en développement web, mobile et logiciel, avec une passion particulière pour l'intelligence artificielle et les systèmes intelligents.",
+      introText2: "J'aime résoudre des problèmes complexes et transformer des idées en solutions concrètes. Chaque projet est pour moi une opportunité d'apprendre et de repousser mes limites.",
+      contactMe: "Me contacter",
+      downloadCV: "Télécharger CV",
+      interests: "Centres d'intérêt",
+      interestAI: "Intelligence Artificielle",
+      interestWeb: "Développement",
+      interestRobotics: "Robotique",
+      interestResearch: "Recherche",
+      statsBadge: "En chiffres",
+      statsTitle: "Quelques statistiques",
+      statsYears: "Années d'expérience",
+      statsProjects: "Projets réalisés",
+      statsTech: "Technologies maîtrisées",
+      statsCerts: "Certifications",
+      journeyBadge: "Mon parcours",
+      journeyTitle: "Expériences & ",
+      journeyTitleHighlight: "Formation",
+      valuesBadge: "Mes valeurs",
+      valuesTitle: "Ce qui me ",
+      valuesTitleHighlight: "motive",
+      valuePerformance: "Performance",
+      valuePerformanceDesc: "Je m'engage à créer des solutions rapides, optimisées et évolutives.",
+      valueInnovation: "Innovation",
+      valueInnovationDesc: "Toujours à la recherche de nouvelles technologies et approches créatives.",
+      valueCollaboration: "Collaboration",
+      valueCollaborationDesc: "Je crois au travail d'équipe et à la communication transparente.",
+      valueLearning: "Apprentissage continu",
+      valueLearningDesc: "Chaque jour est une opportunité d'apprendre quelque chose de nouveau.",
+      quote: "\"La meilleure façon de prédire l'avenir est de le créer.\"",
+      ctaTitle: "Travaillons ensemble !",
+      ctaDescription: "Vous avez un projet en tête ou souhaitez simplement discuter ? N'hésitez pas à me contacter.",
+      ctaButton: "Démarrer une conversation",
+      timeline: {
+        education: {
+          year: "2023 - Présent",
+          title: "Licence 3 en Sciences Informatiques",
+          organization: "Université de Monastir/FSM",
+          description: "Spécialisation en développement logiciel, IA et systèmes d'information."
+        },
+        work: {
+          year: "2025",
+          title: "Développeur Full Stack",
+          organization: "Projets Freelance",
+          description: "Conception et développement de solutions web et mobiles (Capital-Analysis,CapitalPetroleum, Collections, ABS)."
+        },
+        certifications: {
+          year: "2025",
+          title: "Certifications Professionnelles",
+          organization: "Linux Foundation, Cisco, etc.",
+          description: "LPIC-1 Linux Essentials, Cisco Networking Basics, et autres certifications en développement."
+        },
+        milestone: {
+          year: "2020",
+          title: "Début du parcours en Informatique",
+          organization: "LEP ISSA BERI",
+          description: "Apprentissage des fondamentaux"
+        }
+      }
     }
   },
   en: {
     nav: {
       home: "Home",
+      about: "About",
       skills: "Skills",
       projects: "Projects",
       certifications: "Certifications",
@@ -228,7 +306,83 @@ const translations = {
     },
     footer: {
       designed: "Designed and developed by",
-      rights: "All rights reserved"
+      rights: "All rights reserved",
+      description: "Full Stack Developer passionate about creating innovative and performant solutions.",
+      quickLinks: "Quick Links",
+      followMe: "Follow Me",
+      home: "Home",
+      about: "About",
+      projects: "Projects",
+      skills: "Skills",
+      contact: "Contact"
+    },
+    about: {
+      badge: "About me",
+      heroTitle: "Passionate about",
+      heroTitleHighlight: "technology",
+      heroSubtitle: "Full Stack Developer passionate about innovation and new technologies.",
+      heroDescription: "Discover my journey, my values and what motivates me every day.",
+      scrollLabel: "Scroll to content",
+      whoAmI: "Who am I?",
+      introText1: "I am Cheick Salihou Ahmed Cheick Chaibou, a Bachelor's degree student in Computer Science. My journey has allowed me to develop strong expertise in web, mobile and software development, with a particular passion for artificial intelligence and intelligent systems.",
+      introText2: "I love solving complex problems and turning ideas into concrete solutions. Each project is an opportunity for me to learn and push my limits.",
+      contactMe: "Contact me",
+      downloadCV: "Download CV",
+      interests: "Areas of interest",
+      interestAI: "Artificial Intelligence",
+      interestWeb: "Development",
+      interestRobotics: "Robotics",
+      interestResearch: "Research",
+      statsBadge: "By the numbers",
+      statsTitle: "Some statistics",
+      statsYears: "Years of experience",
+      statsProjects: "Projects completed",
+      statsTech: "Technologies mastered",
+      statsCerts: "Certifications",
+      journeyBadge: "My journey",
+      journeyTitle: "Experiences & ",
+      journeyTitleHighlight: "Education",
+      valuesBadge: "My values",
+      valuesTitle: "What ",
+      valuesTitleHighlight: "drives me",
+      valuePerformance: "Performance",
+      valuePerformanceDesc: "I am committed to creating fast, optimized and scalable solutions.",
+      valueInnovation: "Innovation",
+      valueInnovationDesc: "Always looking for new technologies and creative approaches.",
+      valueCollaboration: "Collaboration",
+      valueCollaborationDesc: "I believe in teamwork and transparent communication.",
+      valueLearning: "Continuous Learning",
+      valueLearningDesc: "Every day is an opportunity to learn something new.",
+      quote: "\"The best way to predict the future is to create it.\"",
+      ctaTitle: "Let's work together!",
+      ctaDescription: "Have a project in mind or just want to chat? Feel free to reach out.",
+      ctaButton: "Start a conversation",
+      timeline: {
+        education: {
+          year: "2023 - Present",
+          title: "Bachelor's Degree in Computer Science",
+          organization: "University of Monastir/FSM",
+          description: "Specialization in software development, AI and information systems."
+        },
+        work: {
+          year: "2025",
+          title: "Full Stack Developer",
+          organization: "Freelance Projects",
+          description: "Design and development of web and mobile solutions for various clients (FadakCare, CapitalPetroleum, Collections)."
+        },
+        certifications: {
+          year: "2025",
+          title: "Professional Certifications",
+          organization: "Linux Foundation, Cisco, etc.",
+          description: "LPIC-1 Linux Essentials, Cisco Networking Basics, and other development certifications."
+        },
+        milestone: {
+          year: "2020",
+          title: "Beginning of development journey",
+          organization: "LEP ISSA BERI",
+          description: "Learning fundamentals"
+        }
+      }
     }
   }
 };

@@ -6,9 +6,11 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import AnimatedBackground from "./components/AnimatedBackground";
 import LoadingSpinner from "./components/LoadingSpinner";
+import FloatingCTA from "./components/FloatingCTA";
 
 // Lazy loading des pages pour améliorer les performances
 const Bienvenue = lazy(() => import("./Accueil"));
+const About = lazy(() => import("./pages/About"));
 const Competences = lazy(() => import("./pages/Competences"));
 const Projets = lazy(() => import("./pages/Projets"));
 const Certifications = lazy(() => import("./pages/Certifications"));
@@ -30,6 +32,7 @@ const AnimatedRoutes: FC = () => {
       <Suspense fallback={<PageLoader />}>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Bienvenue />} />
+          <Route path="/about" element={<About />} />
           <Route path="/competences" element={<Competences />} />
           <Route path="/projets" element={<Projets />} />
           <Route path="/certifications" element={<Certifications />} />
@@ -53,6 +56,7 @@ const App: FC = () => {
         </main>
         <Footer />
         <ScrollToTop />
+        <FloatingCTA />
       </div>
     </Router>
   );

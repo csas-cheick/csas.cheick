@@ -35,7 +35,8 @@ import {
   HiDocumentText, 
   HiMail,
   HiMenuAlt3,
-  HiX
+  HiX,
+  HiUser
 } from "react-icons/hi";
 
 const Header: FC = () => {
@@ -66,6 +67,7 @@ const Header: FC = () => {
 
   const navLinks = [
     { name: t.nav.home, path: "/", icon: HiHome },
+    { name: t.nav.about, path: "/about", icon: HiUser },
     { name: t.nav.skills, path: "/competences", icon: HiCode },
     { name: t.nav.projects, path: "/projets", icon: HiFolder },
     { name: t.nav.certifications, path: "/certifications", icon: HiBadgeCheck },

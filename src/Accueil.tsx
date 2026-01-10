@@ -7,6 +7,7 @@ import illustrationPerso from "./assets/illustration_perso.svg";
 import { useLanguage } from "./context/LanguageContext";
 import SEO from "./components/SEO";
 import TypeWriter from "./components/TypeWriter";
+import AvailabilityBadge from "./components/AvailabilityBadge";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -56,10 +57,11 @@ const Accueil: FC = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Section gauche - Texte */}
               <div>
-                <motion.div variants={itemVariants}>
-                  <span className="inline-block px-4 py-2 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium mb-6">
+                <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 mb-6">
+                  <span className="inline-block px-4 py-2 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium">
                     👋 {language === 'fr' ? "Bienvenue sur mon portfolio" : "Welcome to my portfolio"}
                   </span>
+                  <AvailabilityBadge />
                 </motion.div>
                 
                 <motion.h1 
@@ -211,7 +213,7 @@ const Accueil: FC = () => {
         </section>
 
         {/* Section Réseaux Sociaux */}
-        <section className="py-20 px-4">
+        <section className="py-12 md:py-20 px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -219,14 +221,14 @@ const Accueil: FC = () => {
             transition={{ duration: 0.6 }}
             className="container mx-auto max-w-4xl text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-3 md:mb-4">
               {t.home.socialTitle}
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-12">
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8 md:mb-12 px-2">
               {t.home.socialSubtitle}
             </p>
             
-            <div className="flex justify-center gap-6 flex-wrap">
+            <div className="flex justify-center gap-4 sm:gap-6 flex-wrap">
               {[
                 { href: "https://www.linkedin.com/in/csas-cheick", icon: FaLinkedin, color: "hover:bg-blue-600", iconColor: "text-blue-600" },
                 { href: "https://github.com/csas-cheick", icon: FaGithub, color: "hover:bg-gray-800", iconColor: "text-gray-800 dark:text-white" },
@@ -243,9 +245,9 @@ const Accueil: FC = () => {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
                   whileHover={{ y: -5, scale: 1.1 }}
-                  className={`group flex items-center justify-center w-16 h-16 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ${social.color} hover:text-white`}
+                  className={`group flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ${social.color} hover:text-white`}
                 >
-                  <social.icon className={`text-3xl ${social.iconColor} group-hover:text-white transition-colors`} />
+                  <social.icon className={`text-xl sm:text-2xl md:text-3xl ${social.iconColor} group-hover:text-white transition-colors`} />
                 </motion.a>
               ))}
             </div>
