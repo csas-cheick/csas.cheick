@@ -22,7 +22,7 @@ const translations = {
     home: {
       greeting: "Salut !",
       intro: "JE SUIS",
-      name: "CHEICK SALIHOU AHMED CHEICK CHAIBOU",
+      name: "CHEICK SALIHOU AHMED",
       description: "Etudiant, passionné par la technologie, la robotique et l'IA, avec un intérêt marqué pour les environnements innovants et les systèmes intelligents.",
       viewProjects: "Voir mes projets",
       myResume: "Mon CV",
