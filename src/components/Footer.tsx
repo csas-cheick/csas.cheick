@@ -11,7 +11,7 @@ const Footer: FC = () => {
   const socialLinks = [
     { href: "https://github.com/csas-cheick", icon: FaGithub, label: "GitHub" },
     { href: "https://twitter.com/csas_cheick", icon: FaTwitter, label: "Twitter" },
-    { href: "https://www.linkedin.com/in/csas-cheick", icon: FaLinkedin, label: "LinkedIn" },
+    { href: "https://www.linkedin.com/in/cheick-chaibou-cheick-salihou-ahmed-8b1aa3316", icon: FaLinkedin, label: "LinkedIn" },
     { href: "https://www.instagram.com/csas_cheick", icon: FaInstagram, label: "Instagram" },
   ];
 

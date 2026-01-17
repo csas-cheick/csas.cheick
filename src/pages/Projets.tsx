@@ -169,6 +169,20 @@ const Projets: FC = () => {
           githubUrl: "https://github.com/csas-cheick/abs-app",
           category: "Mobile",
         },
+        {
+          title: "Nectar",
+          description: "AI-powered document summarization platform.",
+          longDescription: "Nectar is an intelligent web platform that instantly transforms your large documents (PDF, Word, Images) into clear and precise summaries. Using advanced AI, it analyzes and extracts the essence of your texts while strictly adapting to the word count you define. No more endless reading: Nectar eliminates the superfluous to offer you a fluid, structured and immediately usable synthesis.",
+          image: "/images/screenshots/nectar.png",
+          technologies: [
+            { name: "React", icon: <FaReact /> },
+            { name: "TypeScript", icon: <SiTypescript /> },
+            { name: ".NET", icon: <SiDotnet /> },
+          ],
+          githubUrl: "https://github.com/csas-cheick/Nectar",
+          liveUrl: "https://nectar-pink.vercel.app/",
+          category: "Full Stack & AI",
+        },
       ];
     }
     // French version
@@ -243,6 +257,20 @@ const Projets: FC = () => {
         ],
         githubUrl: "https://github.com/csas-cheick/abs-app",
         category: "Mobile",
+      },
+      {
+        title: "Nectar",
+        description: "Plateforme de résumé de documents propulsée par l'IA.",
+        longDescription: "Nectar est une plateforme web intelligente qui transforme instantanément vos documents volumineux (PDF, Word, Images) en résumés clairs et précis. Grâce à une IA avancée, elle analyse et extrait l'essence de vos textes en s'adaptant strictement au nombre de mots que vous définissez. Fini les lectures interminables : Nectar élimine le superflu pour vous offrir une synthèse fluide, structurée et immédiatement exploitable.",
+        image: "/images/screenshots/nectar.png",
+        technologies: [
+          { name: "React", icon: <FaReact /> },
+          { name: "TypeScript", icon: <SiTypescript /> },
+          { name: ".NET", icon: <SiDotnet /> },
+        ],
+        githubUrl: "https://github.com/csas-cheick/nectar",
+        liveUrl: "https://nectar-app.onrender.com",
+        category: "Full Stack & IA",
       },
     ];
   };

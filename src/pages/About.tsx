@@ -381,7 +381,7 @@ const About: FC = () => {
                 {/* Social Links */}
                 <motion.div variants={itemVariants} className="flex gap-3 sm:gap-4 mt-6 sm:mt-8">
                   <a
-                    href="https://www.linkedin.com/in/csas-cheick"
+                    href="https://www.linkedin.com/in/cheick-chaibou-cheick-salihou-ahmed-8b1aa3316"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="LinkedIn"

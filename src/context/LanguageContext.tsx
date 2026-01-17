@@ -85,6 +85,11 @@ const translations = {
         title: "Capital Analysis",
         description: "Site web corporatif pour entreprise Capital Analysis.",
         longDescription: "Un site vitrine professionnel présentant les services, activités et engagements de l'entreprise Capital Analysis. Développé avec une architecture moderne, une interface responsive et une mise en avant soignée du contenu pour renforcer l'identité numérique de l'entreprise."
+      },
+      nectar: {
+        title: "Nectar",
+        description: "Plateforme de résumé de documents propulsée par l'IA.",
+        longDescription: "Nectar est une plateforme web intelligente qui transforme instantanément vos documents volumineux (PDF, Word, Images) en résumés clairs et précis. Grâce à une IA avancée, elle analyse et extrait l'essence de vos textes en s'adaptant strictement au nombre de mots que vous définissez. Fini les lectures interminables : Nectar élimine le superflu pour vous offrir une synthèse fluide, structurée et immédiatement exploitable."
       }
     },
     certifications: {
@@ -273,6 +278,11 @@ const translations = {
         title: "Capital Analysis",
         description: "Corporate website for Capital Analysis company.",
         longDescription: "A professional showcase site presenting the services, activities and commitments of the Capital Analysis company. Developed with a modern architecture, a responsive interface and a careful presentation of content to strengthen the company's digital identity."
+      },
+      nectar: {
+        title: "Nectar",
+        description: "AI-powered document summarization platform.",
+        longDescription: "Nectar is an intelligent web platform that instantly transforms your large documents (PDF, Word, Images) into clear and precise summaries. Using advanced AI, it analyzes and extracts the essence of your texts while strictly adapting to the word count you define. No more endless reading: Nectar eliminates the superfluous to offer you a fluid, structured and immediately usable synthesis."
       }
     },
     certifications: {

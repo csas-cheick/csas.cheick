@@ -230,7 +230,7 @@ const Accueil: FC = () => {
             
             <div className="flex justify-center gap-4 sm:gap-6 flex-wrap">
               {[
-                { href: "https://www.linkedin.com/in/csas-cheick", icon: FaLinkedin, color: "hover:bg-blue-600", iconColor: "text-blue-600" },
+                { href: "https://www.linkedin.com/in/cheick-chaibou-cheick-salihou-ahmed-8b1aa3316", icon: FaLinkedin, color: "hover:bg-blue-600", iconColor: "text-blue-600" },
                 { href: "https://github.com/csas-cheick", icon: FaGithub, color: "hover:bg-gray-800", iconColor: "text-gray-800 dark:text-white" },
                 { href: "https://twitter.com/csas_cheick", icon: FaTwitter, color: "hover:bg-sky-500", iconColor: "text-sky-500" },
                 { href: "https://www.instagram.com/csas_cheick", icon: FaInstagram, color: "hover:bg-pink-600", iconColor: "text-pink-600" },

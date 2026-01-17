@@ -320,7 +320,7 @@ const Contact: FC = () => {
             </h3>
             <div className="flex justify-center gap-4">
               <a
-                href="https://linkedin.com/in/csas-cheick"
+                href="https://linkedin.com/in/cheick-chaibou-cheick-salihou-ahmed-8b1aa3316"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
