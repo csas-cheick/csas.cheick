@@ -183,7 +183,7 @@ const Projets: FC = () => {
             { name: ".NET", icon: <SiDotnet /> },
           ],
           githubUrl: "https://github.com/csas-cheick/Nectar",
-          liveUrl: "https://nectar-pink.vercel.app/",
+          liveUrl: "https://nectar-jkb1.onrender.com/",
           category: "Full Stack & AI",
         },
       ];
@@ -272,7 +272,7 @@ const Projets: FC = () => {
           { name: "Python", icon: <SiPython /> },
         ],
         githubUrl: "https://github.com/csas-cheick/nectar",
-        liveUrl: "https://nectar-pink.vercel.app/",
+        liveUrl: "https://nectar-jkb1.onrender.com/",
         category: "Full Stack & IA",
       },
     ];
@@ -476,7 +476,7 @@ const Projets: FC = () => {
                   className="relative bg-white dark:bg-gray-800 rounded-3xl shadow-lg overflow-hidden group border border-gray-100 dark:border-gray-700 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500"
                 >
                   {/* Badge EN COURS DE CORRECTION pour Nectar */}
-                  {project.title === (language === 'fr' ? 'Nectar' : 'Nectar') && (
+                  {project.title === (language === 'fr' ? 'Non' : 'Non') && (
                     <span className="absolute top-4 left-4 px-3 py-1 text-xs font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-full shadow-lg z-20 animate-pulse">
                       {language === 'fr' ? 'En cours de correction' : 'Under correction'}
                     </span>
