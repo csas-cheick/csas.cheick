@@ -60,7 +60,7 @@ const Certifications: FC = () => {
       return [
         {
           date: "July 2025",
-          title: "LPIC-1: Linux",
+          title: "LPIC-Linux Essentials: Linux",
           subtitle: "Linux Essentials",
           organization: "Linux Professional Institute",
           verificationUrl: "https://lpi.org/verify/LPI000653714/7k8c58pyyj",
