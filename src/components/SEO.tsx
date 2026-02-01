@@ -20,12 +20,12 @@ const SEO: FC<SEOProps> = ({
   const { language } = useLanguage();
   
   const defaultTitle = language === 'fr' 
-    ? "csas_cheick | Développeur Full Stack" 
-    : "csas_cheick | Full Stack Developer";
+    ? "csas_cheick | Étudiant en Science de l'Informatique" 
+    : "csas_cheick | Computer Science Student";
     
   const defaultDescription = language === 'fr'
-    ? "Portfolio de Cheick Salihou Ahmed Cheick Chaibou - Développeur Full Stack passionné par le web, mobile, IA et les technologies modernes."
-    : "Portfolio of Cheick Salihou Ahmed Cheick Chaibou - Full Stack Developer passionate about web, mobile, AI and modern technologies.";
+    ? "Site web de Cheick Salihou Ahmed - Étudiant en informatique passionné par l'IA, le développement web, mobile et les technologies modernes."
+    : "Website of Cheick Salihou Ahmed - Computer Science student passionate about AI, web development, mobile and modern technologies.";
     
   const defaultKeywords = language === 'fr'
     ? "développeur, full stack, react, typescript, .net, portfolio, web, mobile, flutter, IA"

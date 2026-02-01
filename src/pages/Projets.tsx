@@ -71,9 +71,7 @@ const statsVariants = {
   }
 };
 
-// ========================
 // COMPONENT
-// ========================
 
 const Projets: FC = () => {
   // State

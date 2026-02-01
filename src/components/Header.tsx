@@ -107,7 +107,6 @@ const Header: FC = () => {
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg shadow-indigo-500/25 group-hover:shadow-indigo-500/40 transition-shadow duration-300">
                   <span className="text-white font-bold text-lg">C</span>
                 </div>
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
               </div>
               
               {/* Logo Text */}
